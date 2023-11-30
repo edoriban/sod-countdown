@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'LifeCraft';
+    src: url('/LifeCraft_Font.ttf') format('opentype');
+}
+
+body {
+    background: linear-gradient(to right, #0d1b2a, #7081a0, #0d1b2a);
+}
+
+.background-video {
+    overflow: hidden;
+    width: 100%;
+    max-height: 1vh;
+}
+
+.background-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+
+    font-family: 'LifeCraft', sans-serif;
+    flex-direction: column;
+}
+
+.header {
+    font-family: 'LifeCraft', sans-serif;
+    font-size: 2em;
+}
+
+#countdown {
+    font-size: 9em;
+    color: aliceblue;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#confetti {
+    display: none;
+}
+
+img {
+    max-height: 410px;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #fcf6be;
+    font-weight: 100;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    #countdown {
+        font-size: 2em;
+    }
+
+    b {
+        font-size: 1em;
+    }
+}
+
+footer {
+    color: rgb(255, 255, 234);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1b263b;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fcf6be;
+    border: solid 1px rgb(204, 204, 136);
+    padding: 10px;
+    border-radius: 3px;
+    border-color: antiquewhite;
+}
